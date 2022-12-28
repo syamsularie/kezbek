@@ -17,8 +17,8 @@ public interface UserTierRepository extends JpaRepository<UserTier, Long> {
     )
     Optional<UserTier> findByEmail(String email);
 
-    @Modifying
-    @Transactional
+//    @Modifying
+//    @Transactional
     @Query(
             value = "UPDATE user_tiers SET tier_type = :tierType, transaction_count = :transactionCount, last_transaction = :lastTransaction WHERE email = :email",
             nativeQuery = true

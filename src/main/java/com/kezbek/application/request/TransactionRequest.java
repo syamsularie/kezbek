@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 public class TransactionRequest {
     private String email;
     private String phone;
-    private int totalTransaction;
+    private int totalCheckout;
     private Double amount;
 }
